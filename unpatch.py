@@ -10,8 +10,8 @@ def main():
         print('Preparing to delete...')
         list_kb = map(str, re.findall(r'\bKB.{7}\b', data))
         for hotfixes in list_kb:
-            print (hotfixes.strip('KB'))
-            #uninstall_updates(hotfixes.strip('KB'))
+            #print (hotfixes.strip('KB'))
+            uninstall_updates(hotfixes.strip('KB'))
             print('Uninstalled: ' + hotfixes)
         success()
 
