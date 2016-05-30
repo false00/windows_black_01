@@ -1,4 +1,5 @@
 #created by Citril, edited by false
+#requires: pip install fake-factory
 import sys
 from faker import Factory
 fake = Factory.create('en_US')
@@ -6,7 +7,7 @@ fake = Factory.create('en_US')
 
 def main():
     console_output_to_file()
-    for interation in range(10000):
+    for interation in range(100):
         generate()
 
 
