@@ -7,7 +7,7 @@ fake = Factory.create('en_US')
 
 def main():
     console_output_to_file()
-    for interation in range(100):
+    for interation in range(1000):
         generate()
 
 
